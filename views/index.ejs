@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contentWrapper">
+        <% if (locals.processedName) { %>
+            <h1 class="startupName"><%= processedName %></h1>
+            <form action="/submit" method="POST" class="generateForm">
+                <input type="text" name="word" placeholder="Keyword" class="keywordInput">
+                <input type="submit" value="Generate" class="submitButton">
+            </form>
+        <% } else { %>
+        <h1>Welcome to startup name generator! Enter your keyword below! 👇</h1>
+        <form action="/submit" method="POST" class="generateForm">
+            <input type="text" name="word" placeholder="Keyword" class="keywordInput">
+            <input type="submit" value="Generate" class="submitButton">
+        </form>
+        <% } %>
+    </div>
+</body>
+</html>

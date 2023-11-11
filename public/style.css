@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contentWrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    font-family: 'Agbalumo', sans-serif;
+    color: #FF69B4;
+    background-color: #333333;
+}
+
+.startupName {
+    font-size: 7rem;
+}
+
+.generateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.keywordInput {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Agbalumo', sans-serif;
+    font-size: 2rem;
+}
+
+.submitButton {
+    width: 300px;
+    height: 50px;
+    font-family: 'Agbalumo', sans-serif;
+    background-color: lightpink;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
